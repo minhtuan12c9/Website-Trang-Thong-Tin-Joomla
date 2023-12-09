@@ -1,0 +1,21 @@
+<?php
+defined('_JEXEC') or die;
+
+function regularlabs_php_82b691ff0745780e74573a3db6424f72($src_variables){
+$app = $mainframe = RegularLabs\Library\Condition\Php::getApplication();
+$document = $doc = RegularLabs\Library\Condition\Php::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getApplication()->getIdentity() ?: JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+echo $row['id']; ?>" onclick="return confirm('Bạn có chắc chắn muốn xóa sinh viên này?')">Xóa</a>
+                    </td>
+                </tr>
+                <?php  else { ; ?>
+                <tr>
+                    <td colspan="5">Không có sinh viên nào.</td>
+                </tr>
+                <?php }
+                    mysqli_close($conn);;
+return get_defined_vars();
+;}

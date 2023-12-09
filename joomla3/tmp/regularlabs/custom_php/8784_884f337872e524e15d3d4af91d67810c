@@ -1,0 +1,38 @@
+<?php
+defined('_JEXEC') or die;
+
+function regularlabs_php_3f45852df4556440820661cd753e413a($src_variables){
+$app = $mainframe = RegularLabs\Library\Condition\Php::getApplication();
+$document = $doc = RegularLabs\Library\Condition\Php::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getApplication()->getIdentity() ?: JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+$servername = "localhost";
+                    $username = "root";
+                    $password = "";
+                    $dbname = "joomla3";
+               
+                    // Tạo kết nối đến cơ sở dữ liệu
+                    $conn = mysqli_connect($servername, $username, $password, $dbname);
+ 
+
+                    // Lấy danh sách sinh viên từ cơ sở dữ liệu
+                    $sql = "SELECT * FROM students";
+                    $result = mysqli_query($conn, $sql);
+                   
+                    // Kiểm tra kết quả trả về
+                    if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                ; ?>
+                <tr>
+                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['mssv']; ?></td>
+                    <td><?php echo $row['name']; ?></td>
+                    <td><?php echo $row['email']; ?></td>
+                    <td><?php echo $row['class']; ?></td>
+                    <td>
+                       
+                    <div class="btn <?php echo $row['id'];;
+return get_defined_vars();
+;}
